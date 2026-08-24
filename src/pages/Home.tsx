@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Navigate } from 'react-router-dom';
 import { useAppContext } from '../store/AppContext';
 import { Card } from '../components/ui/Card';
 
@@ -18,13 +18,9 @@ export function HomePage() {
   const { profile } = useAppContext();
   const navigate = useNavigate();
 
-  React.useEffect(() => {
-    if (!profile) {
-      navigate('/perfil');
-    }
-  }, [profile, navigate]);
-
-  if (!profile) return null;
+  if (!profile) {
+    return <Navigate to="/perfil" replace />;
+  }
 
   return (
     <div className="space-y-6">
