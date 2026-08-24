@@ -1,0 +1,6 @@
+{
+  "name": "Meu Caderno de Tarefas",
+  "description": "Aplicativo educativo para ajudar crianças a praticar suas atividades escolares.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

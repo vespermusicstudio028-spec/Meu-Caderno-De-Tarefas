@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #FFFBEB;
+    color: #2D3436;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Arial Black", "Arial Bold", sans-serif;
+  }
+}
+
+@media print {
+  nav {
+    display: none !important;
+  }
+  header {
+    display: none !important;
+  }
+  body {
+    background-color: white !important;
+  }
+  main {
+    padding-bottom: 0 !important;
+  }
+  button {
+    display: none !important;
+  }
+}
