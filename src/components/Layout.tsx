@@ -20,8 +20,8 @@ export function Layout() {
   return (
     <div className="min-h-screen bg-[#FFFBEB] flex flex-col font-sans text-[#2D3436]">
       <header className="bg-[#FFFBEB] px-4 py-6 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-2">
-          <span className="text-3xl">📚</span>
+        <Link to="/" className="flex items-center gap-3">
+          <img src="/logo.png" alt="Meu Caderno de Tarefas" className="w-10 h-10 object-contain rounded-xl drop-shadow-sm hover:scale-105 transition-transform" />
           <h1 className="text-2xl font-black text-[#FF7675] uppercase tracking-tight" style={{ fontFamily: '"Arial Black", sans-serif' }}>
             Meu Caderno
           </h1>
